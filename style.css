@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300&family=Libre+Bodoni&display=swap');
+
+body {
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(241, 239,239);
+  font-family: 'Libre Bodoni', serif;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 300px;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 300px;
+}
+
+p {
+  margin: 0px;
+  font-size: 15px;
+}
+
+
+
+
+/* Controlling the contact buttons at the start. */
+.contact-grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* justify-content: space-evenly for more desired grid. */
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 8px;
+  margin-top: 8px;
+  background-color: black;
+  border: none;
+  text-decoration: none; 
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.item2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding: 8px;
+  margin-top: 8px;
+  background-color: black;
+  border: none;
+  text-decoration: none; 
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.item3 {
+  grid-column-start: 5; /* 1, for more desired grid. */ 
+  grid-column-end: 6; /* 2, for more desired grid. */
+  padding: 8px;
+  margin-top: 8px;
+  background-color: black;
+  border: none;
+  text-decoration: none; 
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.item4 {
+  grid-column-start: 7; /* 3, for more desired grid */
+  grid-column-end: 8; /* 4, for more desired grid */
+  padding: 8px;
+  margin-top: 8px;
+  background-color: black;
+  border: none;
+  text-decoration: none; 
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+a{
+  color: #8F0000;
+  font-size: 15px;
+  text-decoration: none; 
+  font-weight: 100px;
+  transition: 0.4s;
+}
+
+
+a:hover {
+  color: #ffd119;
+}
+
+.square h3 {
+  margin: 35px 0 10px 0;
+}
+
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+hr {
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+li {
+  margin-right: 100px;
+}
+
+.switch{
+  width: 50px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: rgb(26, 25, 25);
+  position: relative;
+}
+
+.flicker {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: rgb(255,255,255);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.4;
+  box-shadow: 
+    inset 4px 4px 4px rgb(255,255,255),
+    inset -8px -8px 8px rgb(195 193 198 / 90%)
+  ;
+}
+
+.dark {
+  background-color: rgb(20, 20, 20); /* 57,57,57 */
+  transition: 0.4s;
+}
+
+.dark a {
+  color: black; 
+  background-color: whitesmoke;
+}
+
+.textual-link {
+  transition: 0s;
+}
+.dark .textual-link {
+ color: #ffb703;
+ background-color: rgb(20, 20, 20);
+  transition: 0.0s;
+}
+
+.dark a:hover {
+  color:#ffb703; 
+}
+.dark hr {
+  border: 1px solid white;
+}
+
+.dark .sub-section a {
+  color: white;
+  background-color: black;
+}
+
+.dark footer a{
+  color: white;
+  background-color: black;
+}
+
+
+.moon {
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+  box-shadow: 4px 4px 0 0 rgb(255,255,255);
+  position: absolute;
+  top: 3px;
+  left: 24px;
+  transition: 0.4s;
+}
+
+.dark .flicker{
+  transform: translateX(20px);
+}
+
+.dark .moon {
+  box-shadow: 4px 4px 0 0 rgb(12, 2, 151);
+}
+
+
+.dark > * {
+  color: rgb(255,255,255)
+}
+
+.main {
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-text {
+  padding: 30px;
+}
+
+.square {
+  width: 98%;
+  margin: 1%;
+  height: 350px;
+  background-color: rgb(255,255,255);
+  text-align: center;
+}
+
+.dark .square {
+  background-color: rgb(41, 41, 41); /*rgb(72, 71, 71); */
+}
+
+button {
+  padding: 8px;
+  margin-top: 8px;
+  background-color: black;
+  border: none;
+  text-decoration: none; 
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+#pacman {
+  background-image: url("images/pac-man-gifs-2.gif");
+  background-size:cover;
+} 
+#rockpaper {
+  background-image: url("images/rock-paper-project-thumbnail4.png");
+  background-size:cover;
+}
+#decoder {
+  background-image: url("images/decodeimgp3.png");
+  background-size:cover;
+}
+.sub-section{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.hero-image {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  display: block;
+}
+
+.cube {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transform: rotate(-25deg) skew(25deg);
+}
+
+.cube::before{
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 100%;
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px; 
+}
+
+.cube::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 21px;
+  transform: skewX(-45deg);
+  left: -10px;
+  bottom: -20px; 
+}
+
+.project-intro-name h2 {
+  text-align: center;
+}
+
+
+#javascript {
+  left: 100px;
+  bottom: 80px;
+  background-image: url("images/js.png");
+  background-size: cover;
+  background-color: whitesmoke;
+  box-shadow: -60px 60px 20px rgb(96 92 92 / 45%);
+}
+
+#javascript:before {
+  background-color: red;
+}
+
+#javascript:after{
+  background-color: darkblue;
+}
+
+#css {
+  left: 220px;
+  bottom: 10px;
+  background-image: url("images/CSS2.png");
+  background-size: cover;
+  background-color: whitesmoke;
+  box-shadow: -60px 60px 20px rgb(96 92 92 / 45%);
+}
+
+#css:before {
+  background-color: red;
+}
+
+#css:after{
+  background-color: darkblue;
+}
+
+#html {
+  left: 350px;
+  bottom: 40px;
+  background-image: url("images/HTML.png");
+  background-size: cover;
+  background-color: whitesmoke;
+  box-shadow: -60px 60px 20px rgb(96 92 92 / 45%);
+}
+
+#html:before {
+  background-color: red;
+}
+
+#html:after{
+  background-color: darkblue;
+}
+
+
+.live-view {
+  display: inline-block;
+  padding: 8px;
+  background-color: black;
+  border: none;
+  text-decoration: none; 
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.view-code {
+  display: inline-block;
+  padding: 8px;
+  background-color: black;
+  border: none;
+  text-decoration: none; 
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 25px 30px; 
+  color: white;
+  background-color: black;
+}
+
+@media only screen and (min-width: 970px) {
+
+  .main-text {
+    width: 50%;
+  }
+  .square {
+    width: 48%;
+    margin: 1%;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero-image {
+    display: none;
+  }
+}
