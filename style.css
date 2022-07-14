@@ -257,8 +257,22 @@ button:hover {
   background-size:cover;
 }
 #decoder {
-  background-image: url("images/decodeimgp3.png");
+  background-image: url("images/decode.png");
   background-size:cover;
+}
+
+#flashcard {
+  background-image: url("images/Flashcard-o-matic.png");
+  background-size: cover; 
+}
+
+#library {
+  background-image: url("images/LocalLibrary.png");
+  background-size: cover; 
+}
+#recipe {
+  background-image: url("images/deliciousfoods.png");
+  background-size: cover;
 }
 .sub-section{
   display: flex;
